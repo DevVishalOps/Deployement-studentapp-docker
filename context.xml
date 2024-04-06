@@ -21,14 +21,13 @@
 <!-- If you're using Confluence 5.7 or below; change maxTotal to maxActive -->
 <Resource name="jdbc/TestDB" auth="Container" type="javax.sql.DataSource"
          username="admin"
-         password="demo1234"
+         password="admin123"
          driverClassName="com.mysql.jdbc.Driver"
-         url="jdbc:mysql://database-1.cp86kgyw8hi1.ap-south-1.rds.amazonaws.com:3306/studentapp?useUnicode=true&amp;characterEncoding=utf8"
+         url="jdbc:mysql://database-1.cdceskiukbdm.ap-south-1.rds.amazonaws.com:3306/studentapp?useUnicode=true&amp;characterEncoding=utf8"
          maxTotal="25"
          maxIdle="10"
          defaultTransactionIsolation="READ_COMMITTED"
          validationQuery="Select 1" />
-
     <!-- Default set of monitored resources. If one of these changes, the    -->
     <!-- web application will be reloaded.                                   -->
     <WatchedResource>WEB-INF/web.xml</WatchedResource>
